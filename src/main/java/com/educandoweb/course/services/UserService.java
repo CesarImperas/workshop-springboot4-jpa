@@ -27,7 +27,10 @@ public class UserService {
 		return obj.get();
 	}
 
-
+	public User insert(User obj) {
+		// Método save (já retorna o objeto inserido)
+		return repository.save(obj);
+	}
 
 
 
